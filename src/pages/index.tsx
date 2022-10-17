@@ -1,5 +1,6 @@
-import type { NextPage } from "next";
+import { NextPage } from "next";
 import Head from "next/head";
+import { Footer } from "src/components/molecules/Footer/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>Hello World</h1>
+        <Footer />
       </main>
     </div>
   );
