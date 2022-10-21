@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -18,7 +19,7 @@ const Footer = () => {
       <ul>
         {links &&
           links.map((link) => (
-            <li className="m-3">
+            <li key={link} className="m-3">
               <a
                 href={`https://${link}`}
                 target="_blank"
@@ -33,6 +34,7 @@ const Footer = () => {
           <a href="https://cdprojektred.com/" target="_blank" rel="noreferrer">
             <img
               src="https://res.cloudinary.com/ddfn8xvu3/image/upload/v1666034701/cyberbug/logo_huafh5.svg"
+              alt="cd projekt red logo"
               className="h-16 w-full"
             />
           </a>
@@ -40,6 +42,7 @@ const Footer = () => {
         <li className="flex mt-4  justify-center">
           <Image
             src="/cyberbug/rating_h8vfn3"
+            alt="age advice"
             layout="fixed"
             height="72px"
             width="72px"
