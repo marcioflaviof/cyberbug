@@ -14,10 +14,11 @@ module.exports = {
     colors: {
       "blue-100": "#02d8f3",
       black: "#000000",
+      white: "#FFFFFF",
       "gray-200": "#cdcdcd",
       "gray-800": "#0e0e0e",
       "green-100": "#00ffd2",
-      "red-light": "#ff003c",
+      "red-100": "#ff003c",
       yellow: "#fcee0a",
     },
     fontFamily: {
