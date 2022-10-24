@@ -1,8 +1,6 @@
-type TwitchTypes = {
-  classes?: string;
-};
+import { IconType } from "../iconTypes";
 
-const Twitch = ({ classes }: TwitchTypes) => {
+const Twitch = ({ classes }: IconType) => {
   return (
     <svg
       viewBox="0 0 34 39"

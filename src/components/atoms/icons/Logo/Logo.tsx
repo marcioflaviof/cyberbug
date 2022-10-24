@@ -1,11 +1,7 @@
-import { ReactElement } from "react";
+import { IconType } from "../iconTypes";
 import Style from "./Logo.module.scss";
 
-type LogoType = {
-  classes?: string;
-};
-
-const Logo = ({ classes }: LogoType): ReactElement => {
+const Logo = ({ classes }: IconType) => {
   return (
     <svg
       version="1.1"

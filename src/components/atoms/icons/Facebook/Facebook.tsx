@@ -1,11 +1,7 @@
-import { ReactElement } from "react";
+import { IconType } from "../iconTypes";
 import Styles from "./Facebook.module.scss";
 
-type FacebookType = {
-  classes?: string;
-};
-
-const Facebook = ({ classes }: FacebookType): ReactElement => {
+const Facebook = ({ classes }: IconType) => {
   return (
     <svg
       version="1.1"

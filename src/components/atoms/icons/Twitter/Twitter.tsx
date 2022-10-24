@@ -1,11 +1,7 @@
-import { ReactElement } from "react";
+import { IconType } from "../iconTypes";
 import Styles from "./Twitter.module.scss";
 
-type TwitterType = {
-  classes?: string;
-};
-
-const Twitter = ({ classes }: TwitterType): ReactElement => {
+const Twitter = ({ classes }: IconType) => {
   return (
     <svg
       version="1.1"

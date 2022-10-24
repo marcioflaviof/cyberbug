@@ -1,10 +1,7 @@
+import { IconType } from "../iconTypes";
 import Styles from "./Alienware.module.scss";
 
-type AlienwareTypes = {
-  classes?: string;
-};
-
-const Alienware = ({ classes }: AlienwareTypes) => {
+const Alienware = ({ classes }: IconType) => {
   return (
     <svg
       id="Warstwa_1"

@@ -1,11 +1,7 @@
-import { ReactElement } from "react";
+import { IconType } from "../iconTypes";
 import Styles from "./Youtube.module.scss";
 
-type YoutubeType = {
-  classes?: string;
-};
-
-const Youtube = ({ classes }: YoutubeType): ReactElement => {
+const Youtube = ({ classes }: IconType) => {
   return (
     <svg
       version="1.1"

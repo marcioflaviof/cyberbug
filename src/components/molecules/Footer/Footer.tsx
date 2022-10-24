@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Logo } from "src/atoms/icons/Logo/Logo";
+import { Logo } from "src/components/atoms/icons/Logo/Logo";
 
 const Footer = () => {
   const [links, setLinks] = useState<string[]>();

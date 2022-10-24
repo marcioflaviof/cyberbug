@@ -34,6 +34,9 @@ module.exports = {
       padding: {
         "20vw": "20vw",
       },
+      backgroundImage: {
+        world: "url('/world.svg')",
+      },
     },
   },
   plugins: [],

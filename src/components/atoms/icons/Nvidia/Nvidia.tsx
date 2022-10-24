@@ -1,8 +1,6 @@
-type NvidiaTypes = {
-  classes?: string;
-};
+import { IconType } from "../iconTypes";
 
-const Nvidia = ({ classes }: NvidiaTypes) => {
+const Nvidia = ({ classes }: IconType) => {
   return (
     <svg
       id="Warstwa_1"
