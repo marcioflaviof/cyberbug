@@ -1,9 +1,12 @@
 import { NextPage } from "next";
 import Head from "next/head";
+
+import { Alienware } from "src/atoms/icons/Alienware/Alienware";
 import { Discord } from "src/atoms/icons/Discord/Discord";
 import { Facebook } from "src/atoms/icons/Facebook/Facebook";
 import { Forums } from "src/atoms/icons/Forums/Forums";
 import { Instagram } from "src/atoms/icons/Instagram/Instagram";
+import { Nvidia } from "src/atoms/icons/Nvidia/Nvidia";
 import { Tumblr } from "src/atoms/icons/Tumblr/Tumblr";
 import { Twitch } from "src/atoms/icons/Twitch/Twitch";
 import { Twitter } from "src/atoms/icons/Twitter/Twitter";
@@ -53,7 +56,7 @@ const socialMedias = [
 
   {
     name: "tumblr",
-    component: <Twitch classes="w-8 h-10" />,
+    component: <Twitch classes={ICON_SIZE.small} />,
     link: "https://cyberpunkgame.tumblr.com/",
   },
 ];
@@ -67,35 +70,41 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <section className="bg-yellow flex flex-col  items-center">
-          <ul className="flex flex-col gap-4 text-center text-black">
-            <li>
-              <a className="font-pro-bold">
-                Terms of User & Privacy Policy {"<"}
-              </a>
-            </li>
-            <li>
-              <a className="font-pro-bold">Careers {"<"}</a>
-            </li>
-            <li>
-              <a className="font-pro-bold">User agreement {"<"}</a>
-            </li>
-            <li>
-              <a className="font-pro-bold">Fan Content Guidelines {"<"}</a>
-            </li>
-            <li>Find us on</li>
-          </ul>
-          <ul className="flex flex-wrap justify-center w-full p-5">
-            {socialMedias.map(({ name, component, link }) => (
-              <li
-                key={name}
-                className="flex basis-1/3 justify-center items-center mt-7"
-              >
-                <a href={link}>{component}</a>
+        <div className="bg-yellow">
+          <section className="flex flex-col items-center mb-10">
+            <ul className="flex flex-col gap-4 text-center text-black mb-2">
+              <li>
+                <a className="font-pro-bold">
+                  Terms of User & Privacy Policy {"<"}
+                </a>
               </li>
-            ))}
-          </ul>
-        </section>
+              <li>
+                <a className="font-pro-bold">Careers {"<"}</a>
+              </li>
+              <li>
+                <a className="font-pro-bold">User agreement {"<"}</a>
+              </li>
+              <li>
+                <a className="font-pro-bold">Fan Content Guidelines {"<"}</a>
+              </li>
+              <li className="font-bold">Find us on</li>
+            </ul>
+            <ul className="flex flex-wrap justify-around w-full p-3">
+              {socialMedias.map(({ name, component, link }) => (
+                <li
+                  key={name}
+                  className="flex basis-1/3 justify-center items-center mb-5"
+                >
+                  <a href={link}>{component}</a>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <section className="flex flex-col items-center gap-5">
+            <Alienware classes="max-w-60" />
+            <Nvidia classes="max-w-45" />
+          </section>
+        </div>
         <Footer />
       </main>
     </div>

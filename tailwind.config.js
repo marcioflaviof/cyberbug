@@ -26,6 +26,10 @@ module.exports = {
       "pro-bold": ["BlenderProBold", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
     },
+    maxWidth: {
+      45: "11.25rem",
+      60: "15rem",
+    },
     extend: {
       padding: {
         "20vw": "20vw",
