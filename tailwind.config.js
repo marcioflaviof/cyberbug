@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
@@ -24,6 +24,11 @@ module.exports = {
       "pro-book": ["BlenderProBook", "sans-serif"],
       "pro-bold": ["BlenderProBold", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
+    },
+    extend: {
+      padding: {
+        "20vw": "20vw",
+      },
     },
   },
   plugins: [],
