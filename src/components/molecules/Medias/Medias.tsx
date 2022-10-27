@@ -14,17 +14,17 @@ enum ICON_SIZE {
 const socialMedias = [
   {
     name: "youtube",
-    component: <Youtube classes={ICON_SIZE.small} />,
+    component: <Youtube className={ICON_SIZE.small} />,
     link: "https://youtube.com/user/CyberPunkGame",
   },
   {
     name: "facebook",
-    component: <Facebook classes={ICON_SIZE.small} />,
+    component: <Facebook className={ICON_SIZE.small} />,
     link: "https://www.facebook.com/CyberpunkGame",
   },
   {
     name: "twitter",
-    component: <Twitter classes={ICON_SIZE.small} />,
+    component: <Twitter className={ICON_SIZE.small} />,
     link: "http://twitter.com/cyberpunkgame",
   },
   {
@@ -34,23 +34,23 @@ const socialMedias = [
   },
   {
     name: "discord",
-    component: <Discord classes={ICON_SIZE.small} />,
+    component: <Discord className={ICON_SIZE.small} />,
     link: "https://discord.gg/cyberpunkgame",
   },
   {
     name: "instagram",
-    component: <Instagram classes={ICON_SIZE.small} />,
+    component: <Instagram className={ICON_SIZE.small} />,
     link: "https://www.instagram.com/cyberpunkgame/",
   },
   {
     name: "tumblr",
-    component: <Tumblr classes="w-4 h-6" />,
+    component: <Tumblr className="w-4 h-6" />,
     link: "https://cyberpunkgame.tumblr.com/",
   },
 
   {
     name: "tumblr",
-    component: <Twitch classes={ICON_SIZE.small} />,
+    component: <Twitch className={ICON_SIZE.small} />,
     link: "https://cyberpunkgame.tumblr.com/",
   },
 ];
@@ -58,7 +58,7 @@ const socialMedias = [
 const Medias = () => {
   return (
     <>
-      <span className="font-bold mb-2">Find us on</span>
+      <span className="font-bold mb-3">Find us on</span>
       <ul className="flex flex-wrap justify-around w-full p-3">
         {socialMedias.map(({ name, component, link }) => (
           <li

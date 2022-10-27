@@ -33,7 +33,7 @@ const Footer = () => {
           ))}
         <li className="flex justify-center">
           <a href="https://cdprojektred.com/" target="_blank" rel="noreferrer">
-            <Logo classes="h-16 w-full" />
+            <Logo className="h-16 w-full" />
           </a>
         </li>
         <li className="flex mt-4  justify-center">

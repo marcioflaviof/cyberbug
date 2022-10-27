@@ -1,7 +1,6 @@
 import { IconType } from "../iconTypes";
-import Styles from "./Youtube.module.scss";
 
-const Youtube = ({ classes }: IconType) => {
+const Youtube = ({ className }: IconType) => {
   return (
     <svg
       version="1.1"
@@ -11,7 +10,7 @@ const Youtube = ({ classes }: IconType) => {
       width="90px"
       height="90px"
       viewBox="0 0 90 90"
-      className={`${Styles.youtube} ${classes}`}
+      className={className}
     >
       <g>
         <path

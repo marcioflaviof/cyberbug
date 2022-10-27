@@ -17,14 +17,14 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className="bg-yellow pt-16">
+        <div className="bg-yellow pt-20">
           <section className="flex flex-col items-center mb-10">
             <Terms />
             <Medias />
           </section>
           <section className="flex flex-col items-center gap-5 mb-14">
-            <Alienware classes="max-w-60" />
-            <Nvidia classes="max-w-45" />
+            <Alienware className="max-w-60" />
+            <Nvidia className="max-w-45" />
           </section>
           <CookieDeclaration />
         </div>

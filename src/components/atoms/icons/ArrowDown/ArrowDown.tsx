@@ -1,12 +1,12 @@
 import { IconType } from "../iconTypes";
 
-const ArrorDown = ({ classes }: IconType) => {
+const ArrorDown = ({ className }: IconType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="10px"
       height="6px"
-      className={classes}
+      className={className}
     >
       <path
         fillRule="evenodd"

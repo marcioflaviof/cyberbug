@@ -1,6 +1,6 @@
 const Terms = () => {
   return (
-    <ul className="flex flex-col gap-4 text-center text-black mb-4">
+    <ul className="flex flex-col gap-6 text-center text-black mb-4">
       <li>
         <a className="font-pro-bold">Terms of User & Privacy Policy {"<"}</a>
       </li>

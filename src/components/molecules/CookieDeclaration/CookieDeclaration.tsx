@@ -18,7 +18,7 @@ const CookieDeclaration = () => {
         copyrights and trademarks are the property of their respective owners.
       </p>
       <div className="flex relative">
-        <World classes="mr-2" />
+        <World className="mr-2 h-6 w-6" />
         <select
           name="languages"
           className="appearance-none mb-7 pr-3 bg-yellow font-bold text-lg border-b border-black hover:cursor-pointer"
@@ -28,7 +28,7 @@ const CookieDeclaration = () => {
           <option value="spanish">Spanish</option>
         </select>
 
-        <ArrorDown classes="absolute right-0 top-2.5" />
+        <ArrorDown className="absolute right-0 top-2.5" />
       </div>
     </section>
   );

@@ -1,8 +1,8 @@
 import { IconType } from "../iconTypes";
 
-const Discord = ({ classes }: IconType) => {
+const Discord = ({ className }: IconType) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" className={classes}>
+    <svg xmlns="http://www.w3.org/2000/svg" className={className}>
       <path
         fillRule="evenodd"
         fill="rgb(0, 0, 0)"
