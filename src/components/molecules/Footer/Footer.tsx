@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useEffect, useState } from "react";
 import { Logo } from "src/components/atoms/icons/Logo/Logo";
 
@@ -40,9 +39,8 @@ const Footer = () => {
           <Image
             src="/cyberbug/rating_h8vfn3"
             alt="age advice"
-            layout="fixed"
-            height="72px"
-            width="72px"
+            height={72}
+            width={72}
           />
         </li>
       </ul>

@@ -15,8 +15,16 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@molecules": "./src/components/molecules/*",
+      "@atoms": "./src/components/atoms/*"
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

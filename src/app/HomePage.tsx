@@ -1,5 +1,7 @@
-import { NextPage } from "next";
+"use client";
+
 import Head from "next/head";
+import RootLayout from "src/app/layout";
 
 import { Alienware } from "src/components/atoms/icons/Alienware/Alienware";
 import { Nvidia } from "src/components/atoms/icons/Nvidia/Nvidia";
@@ -8,7 +10,7 @@ import { Footer } from "src/components/molecules/Footer/Footer";
 import { Medias } from "src/components/molecules/Medias/Medias";
 import { Terms } from "src/components/molecules/Terms/Terms";
 
-const Home: NextPage = () => {
+const HomePage = () => {
   return (
     <div>
       <Head>
@@ -17,21 +19,23 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className="bg-yellow pt-20">
-          <section className="flex flex-col items-center mb-10">
-            <Terms />
-            <Medias />
-          </section>
-          <section className="flex flex-col items-center gap-5 mb-14">
-            <Alienware className="max-w-60" />
-            <Nvidia className="max-w-45" />
-          </section>
-          <CookieDeclaration />
-        </div>
-        <Footer />
+        <RootLayout>
+          <div className="bg-yellow pt-20">
+            <section className="flex flex-col items-center mb-10">
+              <Terms />
+              <Medias />
+            </section>
+            <section className="flex flex-col items-center gap-5 mb-14">
+              <Alienware className="max-w-60" />
+              <Nvidia className="max-w-45" />
+            </section>
+            <CookieDeclaration />
+          </div>
+          <Footer />
+        </RootLayout>
       </main>
     </div>
   );
 };
 
-export default Home;
+export default HomePage;

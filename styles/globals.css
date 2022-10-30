@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: BlenderProBook;
-  src: url(/fonts/BlenderPro-Book.woff2);
+  font-family: BlenderBook;
+  src: url(../src/app/fonts/BlenderPro-Book.woff2);
 }
 
 @font-face {
-  font-family: BlenderProBold;
-  src: url(/fonts/BlenderPro-Bold.woff2);
+  font-family: BlenderBold;
+  src: url(../src/app/fonts/BlenderPro-Bold.woff2);
 }
 
 :root {
@@ -26,11 +26,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: BlenderProBook, sans-serif;
+  font-family: BlenderBook, sans-serif;
 }
 
 h1 {
-  font-family: BlenderProBold, sans-serif;
+  font-family: BlenderBold, sans-serif;
 }
 
 h1,

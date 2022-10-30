@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -12,8 +13,8 @@ module.exports = {
       xl: "1440px",
     },
     fontFamily: {
-      "pro-book": ["BlenderProBook", "sans-serif"],
-      "pro-bold": ["BlenderProBold", "sans-serif"],
+      "blender-book": ["BlenderBook", "sans-serif"],
+      "blender-bold": ["BlenderBold", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
     },
     maxWidth: {
