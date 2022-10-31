@@ -1,21 +1,30 @@
+import { useTranslation } from "react-i18next";
 import { blenderBold } from "src/app/layout";
 
 const Terms = () => {
+  const { t } = useTranslation();
+
   return (
     <ul className="flex flex-col gap-6 text-center text-black mb-4">
       <li>
         <a className="font-blender-bold">
-          Terms of User & Privacy Policy {"<"}
+          {t("termsandprivacy")} {"<"}
         </a>
       </li>
       <li>
-        <a className="font-blender-bold">Careers {"<"}</a>
+        <a className="font-blender-bold">
+          {t("careers")} {"<"}
+        </a>
       </li>
       <li>
-        <a className="font-blender-bold">User agreement {"<"}</a>
+        <a className="font-blender-bold">
+          {t("useragreement")} {"<"}
+        </a>
       </li>
       <li>
-        <a className={blenderBold.className}>Fan Content Guidelines {"<"}</a>
+        <a className={blenderBold.className}>
+          {t("guidelines")} {"<"}
+        </a>
       </li>
     </ul>
   );

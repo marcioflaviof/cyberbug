@@ -47,18 +47,17 @@ const socialMedias = [
     component: <Tumblr className="w-4 h-6" />,
     link: "https://cyberpunkgame.tumblr.com/",
   },
-
   {
-    name: "tumblr",
+    name: "twitch",
     component: <Twitch className={ICON_SIZE.small} />,
-    link: "https://cyberpunkgame.tumblr.com/",
+    link: "https://www.twitch.tv/cdprojektred",
   },
 ];
 
 const Medias = () => {
   return (
     <>
-      <span className="font-bold mb-3">Find us on</span>
+      <span className="font-bold mb-2">Find us on</span>
       <ul className="flex flex-wrap justify-around w-full p-3">
         {socialMedias.map(({ name, component, link }) => (
           <li

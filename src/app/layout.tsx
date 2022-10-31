@@ -1,8 +1,10 @@
 import localFont from "@next/font/local";
-import "../../styles/globals.css";
 
 import { createServer } from "miragejs";
 import { ReactNode } from "react";
+import "./i18n";
+
+import "../../styles/globals.css";
 
 export const blenderBook = localFont({
   src: "./fonts/BlenderPro-Book.woff2",
