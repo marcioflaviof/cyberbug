@@ -4,8 +4,14 @@ import "../../styles/globals.css";
 import { createServer } from "miragejs";
 import { ReactNode } from "react";
 
-export const blenderBook = localFont({ src: "./fonts/BlenderPro-Book.woff2" });
-export const blenderBold = localFont({ src: "./fonts/BlenderPro-Bold.woff2" });
+export const blenderBook = localFont({
+  src: "./fonts/BlenderPro-Book.woff2",
+  variable: "--blender-book",
+});
+export const blenderBold = localFont({
+  src: "./fonts/BlenderPro-Bold.woff2",
+  variable: "--blender-bold",
+});
 
 export default function Layout({ children }: { children: ReactNode }) {
   createServer({

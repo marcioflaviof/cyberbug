@@ -26,11 +26,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: BlenderBook, sans-serif;
+  font-family: var(--blender-book), sans-serif;
 }
 
 h1 {
-  font-family: BlenderBold, sans-serif;
+  font-family: var(--blender-bold), sans-serif;
 }
 
 h1,
