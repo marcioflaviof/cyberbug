@@ -1,6 +1,7 @@
 "use client";
 
 import Head from "next/head";
+import { Trans, useTranslation } from "react-i18next";
 import RootLayout from "src/app/layout";
 
 import { Alienware } from "src/components/atoms/icons/Alienware/Alienware";
@@ -10,7 +11,14 @@ import { Footer } from "src/components/molecules/Footer/Footer";
 import { Medias } from "src/components/molecules/Medias/Medias";
 import { Terms } from "src/components/molecules/Terms/Terms";
 
+const lngs = {
+  en: { nativeName: "English" },
+  pt: { nativeName: "Portugues" },
+};
+
 const HomePage = () => {
+  const { i18n } = useTranslation();
+
   return (
     <div>
       <Head>
@@ -21,6 +29,18 @@ const HomePage = () => {
       <main>
         <RootLayout>
           <div className="bg-yellow pt-20">
+            <div>
+              {Object.keys(lngs).map((lng) => (
+                <button
+                  key={lng}
+                  type="submit"
+                  onClick={() => i18n.changeLanguage(lng)}
+                  disabled={i18n.resolvedLanguage === lng}
+                >
+                  {lngs[lng as keyof typeof lngs].nativeName}
+                </button>
+              ))}
+            </div>
             <section className="flex flex-col items-center mb-10">
               <Terms />
               <Medias />

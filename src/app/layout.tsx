@@ -1,6 +1,10 @@
 import localFont from "@next/font/local";
 import "../../styles/globals.css";
+
 import { ReactNode } from "react";
+import "./i18n";
+
+import "../../styles/globals.css";
 
 import { applyMirage } from "../utils/applyMirage";
 
