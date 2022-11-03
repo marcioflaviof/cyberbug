@@ -16,14 +16,16 @@ i18next
           careers: "Careers",
           useragreement: "User agreement",
           guidelines: "Fan Content Guidelines",
+          findus: "Find us on",
         },
       },
       pt: {
         translation: {
-          termsandprivacy: "Termos de Usuario e Politica de Privacidade",
+          termsandprivacy: "Termos de Uso e Politica de Privacidade",
           careers: "Carreiras",
-          useragreement: "Termos de Licensa",
+          useragreement: "Termos de Licença",
           guidelines: "Guias de Conteudo",
+          findus: "Encontre-nos no(a)",
         },
       },
     },
