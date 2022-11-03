@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Discord } from "src/components/atoms/icons/Discord/Discord";
 import { Facebook } from "src/components/atoms/icons/Facebook/Facebook";
 import { Forums } from "src/components/atoms/icons/Forums/Forums";
@@ -55,9 +56,11 @@ const socialMedias = [
 ];
 
 const Medias = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <span className="font-bold mb-2">Find us on</span>
+      <span className="font-bold mb-2">{t("findus")}</span>
       <ul className="flex flex-wrap justify-around w-full p-3">
         {socialMedias.map(({ name, component, link }) => (
           <li
