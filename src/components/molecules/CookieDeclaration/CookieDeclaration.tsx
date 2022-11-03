@@ -1,19 +1,14 @@
-import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrorDown } from "src/components/atoms/icons/ArrowDown/ArrowDown";
 import { World } from "src/components/atoms/icons/World/World";
 
 const lngs = {
   en: { nativeName: "English" },
-  pt: { nativeName: "Portugues" },
+  pt: { nativeName: "Português" },
 };
 
 const CookieDeclaration = () => {
   const { i18n } = useTranslation();
-
-  useEffect(() => {
-    i18n.changeLanguage("en");
-  }, []);
 
   return (
     <section className="flex flex-col items-center">
@@ -34,11 +29,12 @@ const CookieDeclaration = () => {
         <World className="mr-2 h-6 w-6" />
         <select
           name="languages"
+          value={i18n.language}
           className="appearance-none mb-7 pr-3 bg-yellow font-bold text-lg border-b border-black hover:cursor-pointer"
           onChange={(e) => i18n.changeLanguage(e.target.value)}
         >
           {Object.keys(lngs).map((lng) => (
-            <option value={lng}>
+            <option key={lng} value={lng}>
               {lngs[lng as keyof typeof lngs].nativeName}
             </option>
           ))}
