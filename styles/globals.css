@@ -49,6 +49,6 @@
   }
 
   a {
-    @apply font-blender-bold text-inherit;
+    @apply text-inherit;
   }
 }
