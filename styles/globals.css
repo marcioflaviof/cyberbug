@@ -25,12 +25,11 @@
 
   html,
   body {
-    @apply m-0 p-0 leading-none;
-    font-family: var(--blender-book), sans-serif;
+    @apply m-0 p-0 leading-none font-blender-book;
   }
 
   h1 {
-    font-family: var(--blender-bold), sans-serif;
+    @apply font-blender-bold;
   }
 
   h1,

@@ -3,12 +3,12 @@
 import Head from "next/head";
 import RootLayout from "src/app/layout";
 
-import { Alienware } from "src/components/atoms/icons/Alienware/Alienware";
-import { Nvidia } from "src/components/atoms/icons/Nvidia/Nvidia";
-import { CookieDeclaration } from "src/components/molecules/CookieDeclaration/CookieDeclaration";
-import { Footer } from "src/components/molecules/Footer/Footer";
-import { Medias } from "src/components/molecules/Medias/Medias";
-import { Terms } from "src/components/molecules/Terms/Terms";
+import { Alienware } from "@atoms/icons/Alienware/Alienware";
+import { Nvidia } from "@atoms/icons/Nvidia/Nvidia";
+import { CookieDeclaration } from "@molecules/CookieDeclaration/CookieDeclaration";
+import { Footer } from "@molecules/Footer/Footer";
+import { Medias } from "@molecules/Medias/Medias";
+import { Terms } from "@molecules/Terms/Terms";
 
 const HomePage = () => {
   return (

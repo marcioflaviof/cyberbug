@@ -1,19 +1,8 @@
-import localFont from "@next/font/local";
-
 import { createServer } from "miragejs";
 import { ReactNode } from "react";
 import "./i18n";
 
 import "../../styles/globals.css";
-
-export const blenderBook = localFont({
-  src: "./fonts/BlenderPro-Book.woff2",
-  variable: "--blender-book",
-});
-export const blenderBold = localFont({
-  src: "./fonts/BlenderPro-Bold.woff2",
-  variable: "--blender-bold",
-});
 
 export default function Layout({ children }: { children: ReactNode }) {
   createServer({
@@ -29,10 +18,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   });
 
   return (
-    <html
-      lang="en"
-      className={`${(blenderBold.className, blenderBook.className)}`}
-    >
+    <html lang="en">
       <head>
         <title>Next.js</title>
       </head>
