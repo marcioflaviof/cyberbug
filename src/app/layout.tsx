@@ -4,8 +4,6 @@ import "../../styles/globals.css";
 import { ReactNode } from "react";
 import "./i18n";
 
-import "../../styles/globals.css";
-
 import { applyMirage } from "../utils/applyMirage";
 
 export const blenderBook = localFont({
@@ -21,10 +19,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   applyMirage();
 
   return (
-    <html
-      lang="en"
-      className={`${(blenderBold.className, blenderBook.className)}`}
-    >
+    <html lang="en">
       <head>
         <title>Next.js</title>
       </head>
