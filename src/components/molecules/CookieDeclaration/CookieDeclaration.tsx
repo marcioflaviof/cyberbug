@@ -8,7 +8,7 @@ const lngs = {
 };
 
 const CookieDeclaration = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   return (
     <section className="flex flex-col items-center">
@@ -18,13 +18,9 @@ const CookieDeclaration = () => {
         rel="noreferrer"
         className="font-bold mb-3 text-center"
       >
-        Cookie Declaration {"<"}
+        {t("cookieDeclaration")} {"<"}
       </a>
-      <p className="text-xs px-4 mb-7">
-        CD PROJEKT®, Cyberpunk®, Cyberpunk 2077® are registered trademarks of CD
-        PROJEKT S.A. © 2022 CD PROJEKT S.A. All rights reserved. All other
-        copyrights and trademarks are the property of their respective owners.
-      </p>
+      <p className="text-xs px-4 mb-7">{t("rightsOwner")}</p>
       <div className="flex relative">
         <World className="mr-2 h-6 w-6" />
         <select

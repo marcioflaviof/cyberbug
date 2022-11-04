@@ -17,6 +17,8 @@ i18next
           useragreement: "User agreement",
           guidelines: "Fan Content Guidelines",
           findus: "Find us on",
+          cookieDeclaration: "Cookie Declaration",
+          rightsOwner: `CD PROJEKT®, Cyberpunk®, Cyberpunk 2077® are registered trademarks of CD PROJEKT S.A. © 2022 CD PROJEKT S.A. All rights reserved. All other copyrights and trademarks are the property of their respective owners.`,
         },
       },
       pt: {
@@ -26,6 +28,9 @@ i18next
           useragreement: "Termos de Licença",
           guidelines: "Guias de Conteudo",
           findus: "Encontre-nos no(a)",
+
+          cookieDeclaration: "Declaração de Cookies",
+          rightsOwner: `CD PROJEKT®, Cyberpunk®, Cyberpunk 2077® são marcas registradas da CD PROJEKT S.A. © 2022 CD PROJEKT S.A. Todos os direitos reservados. Todos os direitos autorais e marcas registradas são de propriedade dos seus respectivos donos.`,
         },
       },
     },
