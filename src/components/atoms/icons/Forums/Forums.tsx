@@ -1,12 +1,12 @@
 import { IconType } from "../iconTypes";
 
-const Forums = ({ className }: IconType) => {
+const Forums = ({ className, small }: IconType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="48px"
       height="24px"
-      className={className}
+      className={`${className} ${small ? "h-7 w-7" : null}`}
     >
       <path
         fillRule="evenodd"

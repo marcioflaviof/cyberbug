@@ -1,6 +1,6 @@
 import { IconType } from "../iconTypes";
 
-const Youtube = ({ className }: IconType) => {
+const Youtube = ({ className, small }: IconType) => {
   return (
     <svg
       version="1.1"
@@ -10,7 +10,7 @@ const Youtube = ({ className }: IconType) => {
       width="90px"
       height="90px"
       viewBox="0 0 90 90"
-      className={className}
+      className={`${className} ${small ? "h-7 w-7" : null}`}
     >
       <g>
         <path

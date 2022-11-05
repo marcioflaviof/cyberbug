@@ -1,8 +1,11 @@
 import { IconType } from "../iconTypes";
 
-const Instagram = ({ className }: IconType) => {
+const Instagram = ({ className, small }: IconType) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={`${className} ${small ? "h-7 w-7" : null}`}
+    >
       <path
         fillRule="evenodd"
         fill="rgb(0, 0, 0)"

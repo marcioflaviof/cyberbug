@@ -1,7 +1,7 @@
 import { classNames } from "src/utils/utils";
 import { IconType } from "../iconTypes";
 
-const Logo = ({ className }: IconType) => {
+const Logo = ({ className, small }: IconType) => {
   return (
     <svg
       version="1.1"
@@ -10,7 +10,7 @@ const Logo = ({ className }: IconType) => {
       x="0px"
       y="0px"
       viewBox="0 0 588.7 260.4"
-      className={classNames("text-red-200", className)}
+      className={classNames("text-red-200", className, small ? "h-7 w-7" : "")}
     >
       <g id="CD_Projekt_RED_horizontal_1_">
         <g>

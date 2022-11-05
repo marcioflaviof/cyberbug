@@ -7,24 +7,20 @@ import { Twitch } from "src/components/atoms/icons/Twitch/Twitch";
 import { Twitter } from "src/components/atoms/icons/Twitter/Twitter";
 import { Youtube } from "src/components/atoms/icons/Youtube/Youtube";
 
-enum ICON_SIZE {
-  small = "h-7 w-7",
-}
-
 const socialMedias = [
   {
     name: "youtube",
-    component: <Youtube className={ICON_SIZE.small} />,
+    component: <Youtube small />,
     link: "https://youtube.com/user/CyberPunkGame",
   },
   {
     name: "facebook",
-    component: <Facebook className={ICON_SIZE.small} />,
+    component: <Facebook small />,
     link: "https://www.facebook.com/CyberpunkGame",
   },
   {
     name: "twitter",
-    component: <Twitter className={ICON_SIZE.small} />,
+    component: <Twitter small />,
     link: "http://twitter.com/cyberpunkgame",
   },
   {
@@ -34,12 +30,12 @@ const socialMedias = [
   },
   {
     name: "discord",
-    component: <Discord className={ICON_SIZE.small} />,
+    component: <Discord small />,
     link: "https://discord.gg/cyberpunkgame",
   },
   {
     name: "instagram",
-    component: <Instagram className={ICON_SIZE.small} />,
+    component: <Instagram small />,
     link: "https://www.instagram.com/cyberpunkgame/",
   },
   {
@@ -50,7 +46,7 @@ const socialMedias = [
 
   {
     name: "tumblr",
-    component: <Twitch className={ICON_SIZE.small} />,
+    component: <Twitch small />,
     link: "https://cyberpunkgame.tumblr.com/",
   },
 ];

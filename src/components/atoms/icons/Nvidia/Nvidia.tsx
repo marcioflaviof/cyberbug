@@ -1,6 +1,6 @@
 import { IconType } from "../iconTypes";
 
-const Nvidia = ({ className }: IconType) => {
+const Nvidia = ({ className, small }: IconType) => {
   return (
     <svg
       id="Warstwa_1"
@@ -9,7 +9,7 @@ const Nvidia = ({ className }: IconType) => {
       width="232"
       height="76"
       viewBox="0 0 232 76"
-      className={className}
+      className={`${className} ${small ? "h-7 w-7" : null}`}
     >
       <g id="NVIDIA_GeForce_RTX" data-name="NVIDIA GeForce RTX">
         <path d="M50.34,52.77H49V59.3h1.39c2,0,3.31-.91,3.31-3.27S52.35,52.77,50.34,52.77Z" />

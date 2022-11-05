@@ -1,13 +1,13 @@
 import { IconType } from "../iconTypes";
 
-const World = ({ className }: IconType) => {
+const World = ({ className, small }: IconType) => {
   return (
     <svg
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
       width="32px"
       height="32px"
-      className={className}
+      className={`${className} ${small ? "h-7 w-7" : null}`}
     >
       <path
         fillRule="evenodd"

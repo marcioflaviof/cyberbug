@@ -1,6 +1,6 @@
 import { IconType } from "../iconTypes";
 
-const Alienware = ({ className }: IconType) => {
+const Alienware = ({ className, small }: IconType) => {
   return (
     <svg
       id="Warstwa_1"
@@ -9,7 +9,7 @@ const Alienware = ({ className }: IconType) => {
       width="321.35"
       height="71.54"
       viewBox="0 0 321.35 71.54"
-      className={className}
+      className={`${className} ${small ? "h-7 w-7" : null}`}
     >
       <path
         className="fill-gray-600"

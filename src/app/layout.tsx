@@ -1,8 +1,8 @@
 import localFont from "@next/font/local";
 import "../../styles/globals.css";
-
-import { createServer } from "miragejs";
 import { ReactNode } from "react";
+
+import { applyMirage } from "../utils/applyMirage";
 
 export const blenderBook = localFont({
   src: "./fonts/BlenderPro-Book.woff2",
@@ -14,17 +14,7 @@ export const blenderBold = localFont({
 });
 
 export default function Layout({ children }: { children: ReactNode }) {
-  createServer({
-    routes() {
-      this.get("/api/footer/links", () => [
-        "thewitcher.com",
-        "playgwent.com",
-        "eu.gear.cdprojektred.com",
-      ]);
-
-      this.passthrough("/_next/static/development/_devMiddlewareManifest.json");
-    },
-  });
+  applyMirage();
 
   return (
     <html lang="en" className={(blenderBold.className, blenderBook.className)}>
