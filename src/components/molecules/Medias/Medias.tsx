@@ -1,10 +1,11 @@
+import { useTranslation } from "react-i18next";
 import { Discord } from "src/components/atoms/icons/Discord/Discord";
 import { Facebook } from "src/components/atoms/icons/Facebook/Facebook";
 import { Forums } from "src/components/atoms/icons/Forums/Forums";
 import { Instagram } from "src/components/atoms/icons/Instagram/Instagram";
-import { Tumblr } from "src/components/atoms/icons/Tumblr/Tumblr";
 import { Twitch } from "src/components/atoms/icons/Twitch/Twitch";
 import { Twitter } from "src/components/atoms/icons/Twitter/Twitter";
+import { Tumblr } from "src/components/atoms/icons/Tumblr/Tumblr";
 import { Youtube } from "src/components/atoms/icons/Youtube/Youtube";
 
 const socialMedias = [
@@ -40,21 +41,22 @@ const socialMedias = [
   },
   {
     name: "tumblr",
-    component: <Tumblr className="w-4 h-6" />,
+    component: <Tumblr small />,
     link: "https://cyberpunkgame.tumblr.com/",
   },
-
   {
-    name: "tumblr",
+    name: "twitch",
     component: <Twitch small />,
-    link: "https://cyberpunkgame.tumblr.com/",
+    link: "https://www.twitch.tv/cdprojektred",
   },
 ];
 
 const Medias = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <span className="font-bold mb-3">Find us on</span>
+      <span className="font-bold mb-2">{t("findus")}</span>
       <ul className="flex flex-wrap justify-around w-full p-3">
         {socialMedias.map(({ name, component, link }) => (
           <li

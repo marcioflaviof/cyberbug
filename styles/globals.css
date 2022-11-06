@@ -2,73 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: BlenderBook;
-  src: url(../src/app/fonts/BlenderPro-Book.woff2);
-}
+@layer base {
+  @font-face {
+    font-family: BlenderBook;
+    src: url(../src/app/fonts/BlenderPro-Book.woff2);
+  }
 
-@font-face {
-  font-family: BlenderBold;
-  src: url(../src/app/fonts/BlenderPro-Bold.woff2);
-}
+  @font-face {
+    font-family: BlenderBold;
+    src: url(../src/app/fonts/BlenderPro-Bold.woff2);
+  }
 
-:root {
-  scroll-behavior: smooth;
-}
+  :root {
+    @apply scroll-smooth;
+  }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+  *,
+  *::before,
+  *::after {
+    @apply box-border;
+  }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: var(--blender-book), sans-serif;
-}
+  html,
+  body {
+    @apply m-0 p-0 leading-none font-blender-book;
+  }
 
-h1 {
-  font-family: var(--blender-bold), sans-serif;
-}
+  h1 {
+    @apply font-blender-bold;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-span,
-a,
-p {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  span,
+  a,
+  p {
+    @apply m-0 p-0 leading-none;
+  }
 
-a:hover {
-  cursor: pointer;
-}
+  a:hover {
+    @apply cursor-pointer;
+  }
 
-a {
-  color: inherit;
-}
-
-button {
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.sr-only {
-  display: none;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  a {
+    @apply text-inherit;
+  }
 }

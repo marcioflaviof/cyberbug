@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -13,9 +15,8 @@ module.exports = {
       xl: "1440px",
     },
     fontFamily: {
-      "blender-book": ["BlenderBook", "sans-serif"],
-      "blender-bold": ["BlenderBold", "sans-serif"],
-      roboto: ["Roboto", "sans-serif"],
+      "blender-book": ["BlenderBook", ...defaultTheme.fontFamily.sans],
+      "blender-bold": ["BlenderBold", ...defaultTheme.fontFamily.sans],
     },
     maxWidth: {
       45: "11.25rem",
