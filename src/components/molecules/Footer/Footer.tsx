@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useEffect, useState } from "react";
+import { Logo } from "src/components/atoms/icons/Logo/Logo";
 
 const Footer = () => {
   const [links, setLinks] = useState<string[]>();
@@ -32,20 +32,15 @@ const Footer = () => {
           ))}
         <li className="flex justify-center">
           <a href="https://cdprojektred.com/" target="_blank" rel="noreferrer">
-            <img
-              src="https://res.cloudinary.com/ddfn8xvu3/image/upload/v1666034701/cyberbug/logo_huafh5.svg"
-              alt="cd projekt red logo"
-              className="h-16 w-full"
-            />
+            <Logo className="h-16 w-full" />
           </a>
         </li>
         <li className="flex mt-4  justify-center">
           <Image
             src="/cyberbug/rating_h8vfn3"
             alt="age advice"
-            layout="fixed"
-            height="72px"
-            width="72px"
+            height={72}
+            width={72}
           />
         </li>
       </ul>

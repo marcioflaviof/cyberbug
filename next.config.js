@@ -12,6 +12,10 @@ const nextConfig = {
     path: "https://res.cloudinary.com/ddfn8xvu3",
     domains: ["res.cloudinary.com"],
   },
+  experimental: {
+    appDir: true,
+    fontLoaders: [{ loader: "@next/font/local" }],
+  },
 };
 
 module.exports = nextConfig;
