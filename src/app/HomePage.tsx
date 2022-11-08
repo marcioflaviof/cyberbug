@@ -9,6 +9,7 @@ import { CookieDeclaration } from "@molecules/CookieDeclaration/CookieDeclaratio
 import { Footer } from "@molecules/Footer/Footer";
 import { Medias } from "@molecules/Medias/Medias";
 import { Terms } from "@molecules/Terms/Terms";
+import { Newsletter } from "@molecules/Newsletter/Newsletter";
 
 const HomePage = () => {
   return (
@@ -20,9 +21,9 @@ const HomePage = () => {
 
       <main>
         <RootLayout>
-          <div className="bg-yellow pt-20">
-            <div></div>
-            <section className="flex flex-col items-center mb-10">
+          <div className="bg-yellow-200 pt-20">
+            <Newsletter />
+            <section className="flex flex-col items-center mb-10 pt-20vw border-t border-yellow-400">
               <Terms />
               <Medias />
             </section>

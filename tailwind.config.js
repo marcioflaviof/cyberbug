@@ -22,12 +22,15 @@ module.exports = {
       45: "11.25rem",
       60: "15rem",
     },
+
     extend: {
       padding: {
         "20vw": "20vw",
       },
       backgroundImage: {
         world: "url('/world.svg')",
+        button: "url('/buttonBg.svg')",
+        "razor-bottom-black": "url('/razorBottomBlack.svg')",
       },
       colors: {
         blue: {
@@ -47,7 +50,10 @@ module.exports = {
           100: "#ff003c",
           200: "#db0d15",
         },
-        yellow: "#fcee0a",
+        yellow: {
+          200: "#fcee0a",
+          400: "#bfb506",
+        },
       },
     },
   },
