@@ -4,7 +4,7 @@ import { World } from "src/components/atoms/icons/World/World";
 
 const lngs = {
   en: { nativeName: "English" },
-  ptBr: { nativeName: "Português" },
+  ptBR: { nativeName: "Português" },
 };
 
 const CookieDeclaration = () => {

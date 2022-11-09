@@ -18,12 +18,11 @@ module.exports = {
       "blender-book": ["BlenderBook", ...defaultTheme.fontFamily.sans],
       "blender-bold": ["BlenderBold", ...defaultTheme.fontFamily.sans],
     },
-    maxWidth: {
-      45: "11.25rem",
-      60: "15rem",
-    },
-
     extend: {
+      maxWidth: {
+        45: "11.25rem",
+        60: "15rem",
+      },
       padding: {
         "20vw": "20vw",
       },

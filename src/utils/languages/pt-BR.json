@@ -5,8 +5,14 @@
     "useragreement": "Termos de Licença",
     "guidelines": "Guias de Conteudo",
     "findus": "Encontre-nos no(a)",
-
     "cookieDeclaration": "Declaração de Cookies",
-    "rightsOwner": "CD PROJEKT®, Cyberpunk®, Cyberpunk 2077® são marcas registradas da CD PROJEKT S.A. © 2022 CD PROJEKT S.A. Todos os direitos reservados. Todos os direitos autorais e marcas registradas são de propriedade dos seus respectivos donos."
+    "rightsOwner": "CD PROJEKT®, Cyberpunk®, Cyberpunk 2077® são marcas registradas da CD PROJEKT S.A. © 2022 CD PROJEKT S.A. Todos os direitos reservados. Todos os direitos autorais e marcas registradas são de propriedade dos seus respectivos donos.",
+    "alwaysFirst": "Sempre Primeiro",
+    "signNewsletter": "Se inscreva no Boletim Informativo de Cyberpunk 2077.",
+    "emailAddress": "Insira seu endereço de e-mail",
+    "receiveNews": " Eu gostaria de receber notícias, ofertas especiais e outras informações da CD PROJEKT e tenho 16 anos ou mais.",
+    "personalDataResposability": "CD PROJEKT será responsável por seus dados pessoais. Para mais informações verifique nossa",
+    "privacyPolicy": "Política de Privadidade da CD PROJEKT",
+    "submit": "Enviar"
   }
 }
