@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslation } from "react-i18next";
 import { ArrorDown } from "src/components/atoms/icons/ArrowDown/ArrowDown";
 import { World } from "src/components/atoms/icons/World/World";
