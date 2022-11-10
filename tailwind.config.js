@@ -30,9 +30,11 @@ module.exports = {
         world: "url('/world.svg')",
         button: "url('/buttonBg.svg')",
         "razor-bottom-black": "url('/razorBottomBlack.svg')",
+        "header-bottom-yellow": "url('/detailHeaderBottomYellow.svg')",
       },
       colors: {
         blue: {
+          50: "#00f0ff",
           100: "#02d8f3",
         },
         black: "#000000",
