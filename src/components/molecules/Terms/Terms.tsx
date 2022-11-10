@@ -4,7 +4,7 @@ const Terms = () => {
   const { t } = useTranslation();
 
   return (
-    <ul className="font-blender-bold flex flex-col gap-6 text-center text-black mb-4">
+    <ul className="font-blender-bold flex flex-col gap-6 text-center text-black mb-14">
       <li>
         <a>
           {t("termsandprivacy")} {"<"}
@@ -23,6 +23,11 @@ const Terms = () => {
       <li>
         <a>
           {t("guidelines")} {"<"}
+        </a>
+      </li>
+      <li>
+        <a>
+          {t("redmod")} {"<"}
         </a>
       </li>
     </ul>

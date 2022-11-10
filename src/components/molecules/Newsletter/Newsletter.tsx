@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 
+import { SubmitButton } from "@atoms/buttons/SubmitButton";
+
 const Newsletter = () => {
   const { t } = useTranslation();
 
@@ -46,9 +48,7 @@ const Newsletter = () => {
           </p>
         </div>
       </div>
-      <button className="font-blender-bold bg-button bg-no-repeat text-2xl h-16 w-[264px] uppercase">
-        {t("submit")}
-      </button>
+      <SubmitButton />
     </section>
   );
 };
