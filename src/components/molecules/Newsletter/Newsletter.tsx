@@ -5,7 +5,9 @@ const Newsletter = () => {
 
   return (
     <section className="flex flex-col justify-center items-center w-full mb-16 before:bg-razor-bottom-black before:content-[' '] before:h-10 before:absolute before:right-0 before:left-0 before:top-[-1px] before:bg-top before:bg-repeat-x">
-      <h1 className="text-5xl uppercase">{t("alwaysFirst")}</h1>
+      <h1 className="text-5xl uppercase text-center max-w-[350px]">
+        {t("alwaysFirst")}
+      </h1>
       <span className="font-blender-bold max-w-xs text-xl mt-3 mb-4 break-words text-center">
         {t("signNewsletter")}
       </span>
@@ -25,7 +27,10 @@ const Newsletter = () => {
         />
       </div>
       <div className="flex items-start max-w-[350px] px-9 mb-5">
-        <input type="checkbox" className="flex-shrink-0 flex-grow-0 mr-2" />
+        <input
+          type="checkbox"
+          className="mr-2 border-none outline-none cursor-pointer"
+        />
         <div className="flex flex-col text-sm">
           <p>
             {t("receiveNews")}
