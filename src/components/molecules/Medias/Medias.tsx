@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslation } from "react-i18next";
 import { Discord } from "src/components/atoms/icons/Discord/Discord";
 import { Facebook } from "src/components/atoms/icons/Facebook/Facebook";
