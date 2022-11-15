@@ -1,16 +1,15 @@
 "use client";
 
-import { NewsCard } from "@atoms/NewsCard/NewsCard";
 import { useTranslation } from "react-i18next";
+import { NewsCard } from "@atoms/NewsCard/NewsCard";
+import { SectionTitle } from "@atoms/SectionTitle/SectionTitle";
 
 const News = () => {
   const { t } = useTranslation();
 
   return (
     <section className="items-center bg-black px-3 pb-14">
-      <h2 className="relative pb-3 mb-5 font-blender-bold text-4xl text-center text-yellow-200 uppercase tracking-[2px] after:bg-header-bottom-yellow after:bg-center  after:bg-no-repeat after:w-full after:bottom-0 after:content-[''] after:h-2 after:left-0 after:absolute after:scale-75">
-        {t("news")}
-      </h2>
+      <SectionTitle title={t("news")} />
       <ul className="flex flex-col items-center">
         <li className="group bg-blue-50 py-5 px-7 w-full hover:bg-white">
           <a href="https://www.cyberpunk.net/en/news/46420/patch-1-61-list-of-changes">
