@@ -23,9 +23,6 @@ module.exports = {
         45: "11.25rem",
         60: "15rem",
       },
-      padding: {
-        "20vw": "20vw",
-      },
       backgroundImage: {
         world: "url('/world.svg')",
         button: "url('/buttonBg.svg')",
@@ -41,6 +38,8 @@ module.exports = {
         white: "#FFFFFF",
         gray: {
           200: "#cdcdcd",
+          300: "#979797",
+          400: "#8c8c8c",
           600: "#323031",
           800: "#0e0e0e",
         },
