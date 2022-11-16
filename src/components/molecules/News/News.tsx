@@ -11,7 +11,8 @@ const News = () => {
     <section className="items-center bg-black px-3 pb-14">
       <SectionTitle title={t("news")} />
       <ul className="flex flex-col items-center">
-        <li className="group bg-blue-50 py-5 px-7 w-full hover:bg-white">
+        <li className="group relative bg-blue-50 py-5 px-7 w-full hover:bg-white">
+          <div className="absolute h-7 w-7 -top-4 -left-4 bg-black rotate-45 content-['']" />
           <a href="https://www.cyberpunk.net/en/news/46420/patch-1-61-list-of-changes">
             <div className="flex justify-between items-center">
               <div className="bg-black h-[2px] w-7 content-['']" />
@@ -47,6 +48,7 @@ const News = () => {
           date="23.09.2022"
           subtitle={t("cardFour")}
           link="https://www.cyberpunk.net/en/news/45754/thank-you-for-celebrating-20-years-of-cd-projekt-red"
+          roundBorderBRight
         />
       </ul>
 
