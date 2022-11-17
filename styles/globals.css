@@ -3,16 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: BlenderBook;
-    src: url(../src/app/fonts/BlenderPro-Book.woff2);
-  }
-
-  @font-face {
-    font-family: BlenderBold;
-    src: url(../src/app/fonts/BlenderPro-Bold.woff2);
-  }
-
   :root {
     @apply scroll-smooth;
   }

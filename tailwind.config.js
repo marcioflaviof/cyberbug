@@ -14,14 +14,20 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    fontFamily: {
-      "blender-book": ["BlenderBook", ...defaultTheme.fontFamily.sans],
-      "blender-bold": ["BlenderBold", ...defaultTheme.fontFamily.sans],
-    },
     extend: {
       maxWidth: {
         45: "11.25rem",
         60: "15rem",
+      },
+      fontFamily: {
+        "blender-book": [
+          "var(--blender-book)",
+          ...defaultTheme.fontFamily.sans,
+        ],
+        "blender-bold": [
+          "var(--blender-bold)",
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       backgroundImage: {
         world: "url('/world.svg')",

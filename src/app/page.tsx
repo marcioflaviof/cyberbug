@@ -1,5 +1,10 @@
+import RootLayout from "src/app/layout";
 import HomePage from "./HomePage";
 
 export default async function Page() {
-  return <HomePage />;
+  return (
+    <RootLayout>
+      <HomePage />
+    </RootLayout>
+  );
 }
