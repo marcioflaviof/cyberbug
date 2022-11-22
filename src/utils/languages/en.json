@@ -4,8 +4,16 @@
     "careers": "Careers",
     "useragreement": "User agreement",
     "guidelines": "Fan Content Guidelines",
+    "redmod": "REDmod",
     "findus": "Find us on",
     "cookieDeclaration": "Cookie Declaration",
-    "rightsOwner": "CD PROJEKT®, Cyberpunk®, Cyberpunk 2077® are registered trademarks of CD PROJEKT S.A. © 2022 CD PROJEKT S.A. All rights reserved. All other copyrights and trademarks are the property of their respective owners."
+    "rightsOwner": "CD PROJEKT®, Cyberpunk®, Cyberpunk 2077® are registered trademarks of CD PROJEKT S.A. © 2022 CD PROJEKT S.A. All rights reserved. All other copyrights and trademarks are the property of their respective owners.",
+    "alwaysFirst": "Always First!",
+    "signNewsletter": "Sign up to the Cyberpunk 2077 newsletter.",
+    "emailAddress": "Enter your email address",
+    "receiveNews": "I would like to receive news, special offers and other information from CD PROJEKT and I am 16 years old or older.",
+    "personalDataResposability": "CD PROJEKT will be responsible for your personal data. For more information please check our",
+    "privacyPolicy": "CD PROJEKT Privacy Policy",
+    "submit": "Submit"
   }
 }

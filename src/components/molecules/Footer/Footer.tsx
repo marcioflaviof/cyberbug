@@ -1,21 +1,21 @@
 import Image from "next/legacy/image";
-import { useEffect, useState } from "react";
 import { Logo } from "src/components/atoms/icons/Logo/Logo";
 
-const Footer = () => {
-  const [links, setLinks] = useState<string[]>();
+function asyncComponent<T, R>(fn: (arg: T) => Promise<R>): (arg: T) => R {
+  return fn as (arg: T) => R;
+}
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetch("/api/footer/links");
-      setLinks(await data.json());
-    };
+const getData = async () => {
+  const links = await fetch("http://localhost:3000/api/footer/links");
 
-    fetchData();
-  }, []);
+  return links.json();
+};
+
+const Footer = asyncComponent(async () => {
+  const links: string[] = await getData();
 
   return (
-    <footer className="flex bg-black text-yellow flex-col flex-wrap text-center justify-center align-middle py-20vw">
+    <footer className="flex bg-black text-yellow-200 flex-col flex-wrap text-center justify-center align-middle py-20vw">
       <ul>
         {links &&
           links.map((link) => (
@@ -24,7 +24,7 @@ const Footer = () => {
                 href={`https://${link}`}
                 target="_blank"
                 rel="noreferrer"
-                className="text-yellow text-xl p-2"
+                className="text-yellow-200 text-xl p-2"
               >
                 {link}
               </a>
@@ -46,6 +46,6 @@ const Footer = () => {
       </ul>
     </footer>
   );
-};
+});
 
 export { Footer };
