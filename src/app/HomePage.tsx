@@ -7,14 +7,16 @@ import { Footer } from "@molecules/Footer/Footer";
 import { Medias } from "@molecules/Medias/Medias";
 import { Terms } from "@molecules/Terms/Terms";
 import { Newsletter } from "@molecules/Newsletter/Newsletter";
+import { News } from "@molecules/News/News";
 
 const HomePage = () => {
   return (
     <main>
       <RootLayout>
-        <div className="bg-yellow-200 pt-20">
+        <div className="bg-yellow-200">
+          <News />
           <Newsletter />
-          <section className="flex flex-col items-center mb-10 pt-20vw border-t border-yellow-400">
+          <section className="flex flex-col items-center mb-10 pt-[20vw] border-t border-yellow-400">
             <Terms />
             <Medias />
           </section>

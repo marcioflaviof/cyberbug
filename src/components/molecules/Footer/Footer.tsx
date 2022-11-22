@@ -15,11 +15,11 @@ const Footer = asyncComponent(async () => {
   const links: string[] = await getData();
 
   return (
-    <footer className="flex bg-black text-yellow-200 flex-col flex-wrap text-center justify-center align-middle py-20vw">
+    <footer className="flex bg-black text-yellow-200 flex-col flex-wrap text-center justify-center align-middle py-[18vw]">
       <ul>
         {links &&
           links.map((link) => (
-            <li key={link} className="m-3">
+            <li key={link} className="m-4">
               <a
                 href={`https://${link}`}
                 target="_blank"
@@ -35,7 +35,7 @@ const Footer = asyncComponent(async () => {
             <Logo className="h-16 w-full" />
           </a>
         </li>
-        <li className="flex mt-4  justify-center">
+        <li className="flex mt-6 justify-center">
           <Image
             src="/cyberbug/rating_h8vfn3"
             alt="age advice"

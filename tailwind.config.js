@@ -14,31 +14,38 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    fontFamily: {
-      "blender-book": ["BlenderBook", ...defaultTheme.fontFamily.sans],
-      "blender-bold": ["BlenderBold", ...defaultTheme.fontFamily.sans],
-    },
     extend: {
       maxWidth: {
         45: "11.25rem",
         60: "15rem",
       },
-      padding: {
-        "20vw": "20vw",
+      fontFamily: {
+        "blender-book": [
+          "var(--blender-book)",
+          ...defaultTheme.fontFamily.sans,
+        ],
+        "blender-bold": [
+          "var(--blender-bold)",
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       backgroundImage: {
         world: "url('/world.svg')",
         button: "url('/buttonBg.svg')",
         "razor-bottom-black": "url('/razorBottomBlack.svg')",
+        "header-bottom-yellow": "url('/detailHeaderBottomYellow.svg')",
       },
       colors: {
         blue: {
+          50: "#00f0ff",
           100: "#02d8f3",
         },
         black: "#000000",
         white: "#FFFFFF",
         gray: {
           200: "#cdcdcd",
+          300: "#979797",
+          400: "#8c8c8c",
           600: "#323031",
           800: "#0e0e0e",
         },
