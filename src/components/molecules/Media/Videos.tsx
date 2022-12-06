@@ -31,7 +31,7 @@ const Videos = () => {
 
   return (
     <>
-      <div className="mt-10 aspect-w-16 aspect-h-9 w-full">
+      <div className="mt-7 aspect-w-16 aspect-h-9 w-full">
         <iframe id="ytplayer" src={activeVideo.videoLink} />
       </div>
       <Swiper

@@ -8,7 +8,7 @@ const News = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="items-center bg-black px-3 pb-14">
+    <section className="items-center bg-black px-4 pb-14 pt-6">
       <SectionTitle title={t("news")} />
       <ul className="flex flex-col items-center">
         <li className="group relative bg-blue-50 py-5 px-7 w-full hover:bg-white">
