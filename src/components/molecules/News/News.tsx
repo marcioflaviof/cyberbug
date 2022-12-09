@@ -52,7 +52,12 @@ const News = () => {
         />
       </ul>
 
-      <a className="block text-blue-50 underline text-center mt-5 hover:no-underline">
+      <a
+        className="block text-blue-50 underline text-center mt-5 hover:no-underline"
+        href="https://www.cyberpunk.net/en/news/"
+        target="_blank"
+        rel="noreferrer"
+      >
         {t("seeMoreNews")} {">"}
       </a>
     </section>
