@@ -8,12 +8,14 @@ import { Medias } from "@molecules/Medias/Medias";
 import { Terms } from "@molecules/Terms/Terms";
 import { Newsletter } from "@molecules/Newsletter/Newsletter";
 import { News } from "@molecules/News/News";
+import { Presentation } from "@molecules/Presentation/Presentation";
 
 const HomePage = () => {
   return (
     <main>
       <RootLayout>
         <div className="bg-yellow-200">
+          <Presentation />
           <News />
           <Newsletter />
           <section className="flex flex-col items-center mb-10 pt-[20vw] border-t border-yellow-400">
