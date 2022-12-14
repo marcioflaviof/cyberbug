@@ -10,13 +10,13 @@ const Header = () => {
       <div className="max-w-[130px]">
         <ColoredBar />
       </div>
-      <h2 className=" uppercase text-[18px] leading-5">
+      <h3 className=" uppercase text-[18px] leading-5">
         <div className="flex">
           <Mail className="pr-1 mt-1" />
           sign up for cyberpunk 2077:{" "}
         </div>
-        <strong className="font-blender-bold">news! {">"}</strong>
-      </h2>
+        <span className="font-blender-bold">news! {">"}</span>
+      </h3>
     </a>
   );
 };

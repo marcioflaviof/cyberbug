@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   content: [
@@ -61,7 +62,22 @@ module.exports = {
           400: "#bfb506",
         },
       },
+      textShadow: {
+        default:
+          "0 2px 32px rgba(0,0,0,.9),0 2px 12px rgba(0,0,0,.9),0 2px 12px rgba(0,0,0,.9)",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    }),
+  ],
 };
