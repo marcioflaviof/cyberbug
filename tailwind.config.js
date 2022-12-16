@@ -35,6 +35,13 @@ module.exports = {
         button: "url('/buttonBg.svg')",
         "razor-bottom-black": "url('/razorBottomBlack.svg')",
         "header-bottom-yellow": "url('/detailHeaderBottomYellow.svg')",
+        "bottom-bar": "url('/bottomBar.svg')",
+      },
+      backgroundSize: {
+        "bottom-bar-size": "auto 50%",
+      },
+      backgroundPosition: {
+        "bottom-bar-position": "-130px 100%",
       },
       colors: {
         blue: {

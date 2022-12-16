@@ -1,4 +1,3 @@
-import { BottomBar } from "@atoms/icons/BottomBar/BottomBar";
 import { Logo } from "@atoms/icons/Logo/Logo";
 import { SvgButton } from "@atoms/icons/SvgButton/SvgButton";
 import Image from "next/legacy/image";
@@ -30,9 +29,7 @@ const Presentation = () => {
         </div>
       </div>
 
-      <div className="z-10 absolute -bottom-3 h-10 left-0 right-0">
-        <BottomBar />
-      </div>
+      <div className="after:bg-bottom-bar after:content-[' '] after:h-10 after:w-full after:absolute after:z-10 after:-bottom-1 after:bg-repeat-x after:bg-bottom-bar-size after:bg-bottom-bar-position" />
     </section>
   );
 };
