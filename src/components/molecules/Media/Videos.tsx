@@ -38,7 +38,7 @@ const Videos = () => {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={16}
         slidesPerView={3}
-        navigation
+        navigation={false}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         className="flex flex-col text-white mt-10 max-w-full"

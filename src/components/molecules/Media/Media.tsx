@@ -10,10 +10,6 @@ import { Screenshots } from "./Screenshots";
 import { Videos } from "./Videos";
 import { Wallpapers } from "./Wallpapers";
 
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-
 const medias = [
   { type: "videos", component: <Videos /> },
   {

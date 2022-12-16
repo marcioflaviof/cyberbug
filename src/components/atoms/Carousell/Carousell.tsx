@@ -29,11 +29,11 @@ const Carousell = ({ images }: CarousellType) => {
         />
       )}
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Scrollbar, A11y]}
         spaceBetween={16}
         slidesPerView={2.3}
-        navigation
-        pagination={{ clickable: true }}
+        navigation={false}
+        pagination={{ clickable: false }}
         scrollbar={{ draggable: true }}
         className="flex flex-col text-white mt-10 max-w-full"
       >
