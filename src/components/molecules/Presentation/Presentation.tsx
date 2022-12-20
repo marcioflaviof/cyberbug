@@ -1,5 +1,5 @@
+import { GlitchButton } from "@atoms/buttons/GlitchButton/GlitchButton";
 import { Logo } from "@atoms/icons/Logo/Logo";
-import { SvgButton } from "@atoms/icons/SvgButton/SvgButton";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { Header } from "./Header";
@@ -25,7 +25,7 @@ const Presentation = () => {
             Experience Night City on next-gen
           </p>
 
-          <SvgButton />
+          <GlitchButton />
         </div>
       </div>
 
