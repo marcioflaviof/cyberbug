@@ -2,7 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 
-import { SubmitButton } from "@atoms/buttons/SubmitButton";
+import { SubmitButton } from "@atoms/SubmitButton/SubmitButton";
 
 const Newsletter = () => {
   const { t } = useTranslation();
@@ -47,6 +47,8 @@ const Newsletter = () => {
               <a
                 className="underline"
                 href="https://regulations.cdprojektred.com/en/privacy_policy"
+                target="_blank"
+                rel="noreferrer"
               >
                 {t("privacyPolicy")}
               </a>

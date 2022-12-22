@@ -24,7 +24,12 @@ const NewsCard: React.FC<NewsCardType> = ({
           roundBorderBRight ? "block" : "hidden"
         )}
       />
-      <a href={link} className="text-gray-200 group-hover:text-black">
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="text-gray-200 group-hover:text-black"
+      >
         <div className="flex justify-between items-center">
           <div className="bg-gray-200 h-[2px] w-7 content-[''] group-hover:bg-black" />
           <div className="font-blender-bold uppercase text-[7px] tracking-[2px] group-hover:hidden">
