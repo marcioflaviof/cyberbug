@@ -20,7 +20,7 @@ const NewsCard: React.FC<NewsCardType> = ({
     <li className="group relative border-gray-200 border py-5 px-7 mt-1 hover:bg-white">
       <div
         className={classNames(
-          "absolute  h-6 w-6 -bottom-3 -right-3 border-l border-white bg-black rotate-45 content-['']",
+          "absolute h-6 w-6 -bottom-3 -right-3 border-l border-white bg-black rotate-45 content-['']",
           roundBorderBRight ? "block" : "hidden"
         )}
       />

@@ -56,6 +56,7 @@ module.exports = {
           400: "#8c8c8c",
           600: "#323031",
           800: "#0e0e0e",
+          900: "#0b0b0b",
         },
         green: {
           100: "#00ffd2",
@@ -76,7 +77,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ matchUtilities, theme }) {
+    plugin(function({ matchUtilities, theme }) {
       matchUtilities(
         {
           "text-shadow": (value) => ({
@@ -86,5 +87,6 @@ module.exports = {
         { values: theme("textShadow") }
       );
     }),
+    require("@tailwindcss/aspect-ratio"),
   ],
 };
