@@ -3,6 +3,7 @@ import localFont from "@next/font/local";
 
 import "./i18n";
 import "../../styles/globals.css";
+import "swiper/swiper.min.css";
 
 const blenderBold = localFont({
   src: "./fonts/BlenderPro-Bold.woff2",

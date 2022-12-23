@@ -8,7 +8,7 @@ const News = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="items-center bg-black px-3 pb-14">
+    <section className="items-center bg-black px-4 pb-14 pt-6">
       <SectionTitle title={t("news")} />
       <ul className="flex flex-col items-center">
         <li className="group relative bg-blue-50 py-5 px-7 w-full hover:bg-white">
@@ -56,7 +56,12 @@ const News = () => {
         />
       </ul>
 
-      <a className="block text-blue-50 underline text-center mt-5 hover:no-underline">
+      <a
+        className="block text-blue-50 underline text-center mt-5 hover:no-underline"
+        href="https://www.cyberpunk.net/en/news/"
+        target="_blank"
+        rel="noreferrer"
+      >
         {t("seeMoreNews")} {">"}
       </a>
     </section>
