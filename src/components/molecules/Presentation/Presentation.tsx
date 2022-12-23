@@ -8,7 +8,7 @@ const Presentation = () => {
   return (
     <section className="relative">
       <Header />
-      <div className="relative h-[73vh] z-10 text-center uppercase">
+      <div className="relative h-[120vw] z-10 text-center uppercase">
         <div className="absolute -z-10 h-full w-full">
           <Image
             src="/cyberbug/presentation/cover-mobile-en-27491add_ogush4.jpg"
