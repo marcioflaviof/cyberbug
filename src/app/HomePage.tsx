@@ -7,6 +7,7 @@ import { Footer } from "@molecules/Footer/Footer";
 import { Media } from "@molecules/Media/Media";
 import { Medias } from "@molecules/Medias/Medias";
 import { News } from "@molecules/News/News";
+import { Presentation } from "@molecules/Presentation/Presentation";
 import { Newsletter } from "@molecules/Newsletter/Newsletter";
 import { Terms } from "@molecules/Terms/Terms";
 
@@ -15,6 +16,7 @@ const HomePage = () => {
     <main>
       <RootLayout>
         <div className="bg-yellow-200">
+          <Presentation />
           <Media />
           <News />
           <Newsletter />

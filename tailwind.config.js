@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   content: [
@@ -34,6 +35,13 @@ module.exports = {
         button: "url('/buttonBg.svg')",
         "razor-bottom-black": "url('/razorBottomBlack.svg')",
         "header-bottom-yellow": "url('/detailHeaderBottomYellow.svg')",
+        "bottom-bar": "url('/bottomBar.svg')",
+      },
+      backgroundSize: {
+        "bottom-bar-size": "auto 50%",
+      },
+      backgroundPosition: {
+        "bottom-bar-position": "-130px 100%",
       },
       colors: {
         blue: {
@@ -62,7 +70,23 @@ module.exports = {
           400: "#bfb506",
         },
       },
+      textShadow: {
+        default:
+          "0 2px 32px rgba(0,0,0,.9),0 2px 12px rgba(0,0,0,.9),0 2px 12px rgba(0,0,0,.9)",
+      },
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [
+    plugin(function({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    }),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };
