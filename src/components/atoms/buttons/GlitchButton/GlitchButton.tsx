@@ -1,8 +1,8 @@
-import "./GlitchButton.modules.css";
+import "./GlitchButton.scss";
 
 const GlitchButton = () => {
   return (
-    <div className="container ">
+    <div className="container">
       <button className="cybr-btn font-blender-bold w-44 h-11 text-xs">
         Available Now
         <span aria-hidden className="cybr-btn__glitch font-blender-bold">
