@@ -14,7 +14,7 @@ const Card = ({ title, subtitle, link, color, imageSrc }: CardType) => {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className={`${color} relative basis-full border-black border-[5px] px-3 pt-3 pb-12`}
+      className={`${color} relative basis-full border-black border-[5px] px-3 pt-3 pb-12 hover:bg-white transition duration-300 hover:ease-in`}
     >
       <div>
         <Image src={imageSrc} layout="responsive" width={100} height={60} />

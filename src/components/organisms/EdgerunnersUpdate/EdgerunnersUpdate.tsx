@@ -37,7 +37,7 @@ const cards = [
 
 const EdgerunnersUpdate = () => {
   return (
-    <div className="flex flex-col justify-center items-center px-8">
+    <section className="flex flex-col relative justify-center items-center px-8 pt-10 pb-20 after:bg-bottom-bar-edge-update after:content-[' '] after:h-6 after:bg-top after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full">
       <h1 className="text-center text-[1.75rem] leading-7 uppercase">
         The Edgerunners update is here
       </h1>
@@ -48,7 +48,7 @@ const EdgerunnersUpdate = () => {
         as well as a host of new features and content to dig into.
       </p>
       <CardsList cards={cards} />
-    </div>
+    </section>
   );
 };
 
