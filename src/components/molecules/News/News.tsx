@@ -13,7 +13,11 @@ const News = () => {
       <ul className="flex flex-col items-center">
         <li className="group relative bg-blue-50 py-5 px-7 w-full hover:bg-white">
           <div className="absolute h-7 w-7 -top-4 -left-4 bg-black rotate-45 content-['']" />
-          <a href="https://www.cyberpunk.net/en/news/46420/patch-1-61-list-of-changes">
+          <a
+            href="https://www.cyberpunk.net/en/news/46420/patch-1-61-list-of-changes"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="flex justify-between items-center">
               <div className="bg-black h-[2px] w-7 content-['']" />
               <div className="font-blender-bold uppercase text-[7px] tracking-[2px] group-hover:hidden">

@@ -65,7 +65,9 @@ const Medias = () => {
             key={name}
             className="flex basis-1/3 justify-center items-center mb-5"
           >
-            <a href={link}>{component}</a>
+            <a href={link} target="_blank" rel="noreferrer">
+              {component}
+            </a>
           </li>
         ))}
       </ul>

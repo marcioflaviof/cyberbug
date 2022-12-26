@@ -17,7 +17,10 @@ const blenderBook = localFont({
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${blenderBook.variable} ${blenderBold.variable}`}
+    >
       <head>
         <meta
           name="viewport"
@@ -25,9 +28,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         />
         <title>Next.js</title>
       </head>
-      <body className={`${blenderBook.variable} ${blenderBold.variable}`}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

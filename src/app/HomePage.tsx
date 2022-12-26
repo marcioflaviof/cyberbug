@@ -7,6 +7,7 @@ import { Footer } from "@molecules/Footer/Footer";
 import { Media } from "@molecules/Media/Media";
 import { Medias } from "@molecules/Medias/Medias";
 import { News } from "@molecules/News/News";
+import { EdgerunnersUpdate } from "src/components/organisms/EdgerunnersUpdate/EdgerunnersUpdate";
 import { Presentation } from "@molecules/Presentation/Presentation";
 import { Newsletter } from "@molecules/Newsletter/Newsletter";
 import { Terms } from "@molecules/Terms/Terms";
@@ -19,6 +20,7 @@ const HomePage = () => {
           <Presentation />
           <Media />
           <News />
+          <EdgerunnersUpdate />
           <Newsletter />
           <section className="flex flex-col items-center mb-10 pt-[20vw] border-t border-yellow-400">
             <Terms />

@@ -2,14 +2,13 @@
 
 import { useTranslation } from "react-i18next";
 
-import { SubmitButton } from "@atoms/buttons/SubmitButton";
+import { SubmitButton } from "@atoms/SubmitButton/SubmitButton";
 
 const Newsletter = () => {
   const { t } = useTranslation();
 
   return (
     <section className="relative">
-      <div className="bg-razor-bottom-black content-[' '] h-10 absolute right-0 left-0 top-[-1px] bg-top bg-repeat-x" />
       <div className="flex px-10 pt-12 flex-col justify-center items-center w-full mb-16 before:bg-razor-bottom-black before:content-[' '] before:h-10 before:absolute before:right-0 before:left-0 before:top-[-1px] before:bg-top before:bg-repeat-x">
         <h1 className="text-5xl uppercase text-center max-w-[350px]">
           {t("alwaysFirst")}
@@ -47,6 +46,8 @@ const Newsletter = () => {
               <a
                 className="underline"
                 href="https://regulations.cdprojektred.com/en/privacy_policy"
+                target="_blank"
+                rel="noreferrer"
               >
                 {t("privacyPolicy")}
               </a>

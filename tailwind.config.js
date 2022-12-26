@@ -36,6 +36,7 @@ module.exports = {
         "razor-bottom-black": "url('/razorBottomBlack.svg')",
         "header-bottom-yellow": "url('/detailHeaderBottomYellow.svg')",
         "bottom-bar": "url('/bottomBar.svg')",
+        "bottom-bar-edge-update": "url('/bottomEdgeUpdateBar.svg')",
       },
       backgroundSize: {
         "bottom-bar-size": "auto 50%",
@@ -77,7 +78,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function({ matchUtilities, theme }) {
+    plugin(function ({ matchUtilities, theme }) {
       matchUtilities(
         {
           "text-shadow": (value) => ({
